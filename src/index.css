@@ -1,0 +1,36 @@
+  html {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'bebas';
+    src: url('fonts/BEBAS.eot');
+    src: url('fonts/BEBAS.eot') format('embedded-opentype'),
+         url('fonts/BEBAS.woff2') format('woff2'),
+         url('fonts/BEBAS.woff') format('woff'),
+         url('fonts/BEBAS.ttf') format('truetype'),
+         url('fonts/BEBAS.svg#BEBAS') format('svg');
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F2F2F2;
+    font-family: 'bebas', sans-serif;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  *{
+    font-family:'bebas' !important;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    
+  }
+  /* [type=button]{
+    -webkit-appearance: none !important;
+  } */

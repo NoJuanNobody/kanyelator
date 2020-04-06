@@ -1,0 +1,31 @@
+{
+  "projects": {
+    "default": "gohandrogo",
+    "master": "gohandrogo",
+    "prod": "gohandrogo"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "env": "staging",
+        "firebase": {
+          "apiKey": "TBD",
+          "authDomain": "gohandrogo.firebaseapp.com",
+          "databaseURL": "https://gohandrogo.firebaseio.com",
+          "projectId": "gohandrogo",
+          "storageBucket": "gohandrogo.appspot.com"
+        }
+      },
+      "prod": {
+        "env": "production",
+        "firebase": {
+          "apiKey": "TBD",
+          "authDomain": "gohandrogo.firebaseapp.com",
+          "databaseURL": "https://gohandrogo.firebaseio.com",
+          "projectId": "gohandrogo",
+          "storageBucket": "gohandrogo.appspot.com"
+        }
+      }
+    }
+  }
+}
