@@ -1,17 +1,31 @@
 import { combineReducers } from 'redux';
 import { 
-    PRESS_ANSWER,
-    PRESS_NUM,
-    PRESS_KEY
+    MODE_DIGIT,
+    MODE_OPERATOR,
+    PRESS_ANSWER
 } from './actiontypes';
 
 export default function (state={}, action){
-    
-    switch(action.type){
+    let { type, payload } = action
+    switch(type){
         case PRESS_ANSWER:
-            
-            let ans = eval(action.payload);
-            console.log(ans);
+            let ans = eval(payload);
+            console.log({
+                ...state,
+                ans,
+            })
+            return {
+                ...state,
+                ans,
+            }
+            break;
+        case MODE_DIGIT:
+            return {
+                ...state,
+                ans,
+            }
+            break;
+        case MODE_OPERATOR:
             return {
                 ...state,
                 ans,
@@ -21,5 +35,6 @@ export default function (state={}, action){
             return {
                 ...state
             }
+        
     }
 }

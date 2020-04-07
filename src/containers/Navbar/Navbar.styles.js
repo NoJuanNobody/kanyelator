@@ -1,9 +1,17 @@
+import theme from 'theme'
+
 export default () => ({
   flex: {
     flexGrow: 1
   },
+  brand: {
+    "margin": "auto",
+    color: theme.palette.primary.main,
+  },
   appBar: {
-    // backgroundColor: theme.palette.primary1Color // Update this to change navbar color
+    backgroundColor: 'rgba(0,0,0,0)',
+    dropShadow: 'none' ,
+    boxShadow: 'none',
   },
   signIn: {
     color: 'white',

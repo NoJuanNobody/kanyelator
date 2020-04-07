@@ -24,8 +24,8 @@ function NavbarWithoutAuth({ children, brandPath }) {
           data-test="brand">
           Kanyelator
         </Typography>
-        <div className={classes.flex} />
-        {children}
+        {/* <div className={classes.flex} /> */}
+        {/* {children} */}
       </Toolbar>
     </AppBar>
   )
